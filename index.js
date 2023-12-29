@@ -4,6 +4,10 @@ const c = canvas.getContext('2d')
 canvas.width = 1024
 canvas.height = 576
 
+/*things to do:
+background image
+game over
+*/
 c.fillRect(0, 0, canvas.width, canvas.height)
 const gravity = .9
 class Sprite {
@@ -195,8 +199,22 @@ function animation() {
     //     player2.isAttackingL = false
     // }
 
-    
+
+    function determineWinner(){
+        if (player2.health <= 0){
+            document.querySelector('#gameState').innerHTML = 'Player 1 Wins'
+            document.querySelector('#gameState').style.display = 'flex'
+        } else if(player.health <= 0){
+            document.querySelector('#gameState').innerHTML = 'Player 2 Wins'
+            document.querySelector('#gameState').style.display = 'flex'
+        }
+    }
+    determineWinner()
 }
+
+
+
+
 animation()
 window.addEventListener('keydown', (event) => {
     switch (event.key) {
