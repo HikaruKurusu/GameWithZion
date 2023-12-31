@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(42, 5, 74);
     text-decoration: none;
 }
 * {
@@ -44,7 +44,7 @@ body {
 }
 p {
     font-size: 50px;
-    color: white;
+    color: rgb(251, 251, 251);
 }
 
 
@@ -52,11 +52,11 @@ p {
 
 
 a:link {
-    color: black;
+    color: lightgray;
   }
   
   a:visited {
-    color: black;
+    color: lightgray;
   }
   
   a:hover {
