@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(36, 1, 36);
+    background-color: white;
     text-decoration: none;
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     text-align: center;
     margin-top: 34px;
     
@@ -17,7 +17,7 @@ body {
     margin: 3%;
     position: relative;
     margin-left: 165px;
-    margin-top: 150px
+    margin-top: 200px
     
     
     
@@ -33,18 +33,40 @@ body {
 }
 .text-container {
     position: absolute;
-    color: rgb(255, 255, 255);
+    color: white;
     list-style: none;
     display: list-item;
     justify-content: center;
-    left: 18rem;
+    left: 16rem;
     top: 2rem;
     font-size: 30px;
     text-decoration: none;
 }
 p {
-    font-size: 100px;
-    color: black;
+    font-size: 50px;
+    color: white;
 }
 
 
+
+
+
+a:link {
+    color: blue;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  /* a:active {
+    color: red;
+  } */
+  
+  a:link, a:visited {
+    text-decoration: none;
+  }
